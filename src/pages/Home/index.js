@@ -33,7 +33,7 @@ function Homepage() {
         fetch(
           `https://gateway.marvel.com:443/v1/public/characters?orderBy=${
             checked === true ? "-name" : "name"
-          }&limit=20&apikey=${process.env.REACT_APP_API_KEY}`
+          }&limit=20&apikey=37e7928420ebfdcac88f6dbe3cbf39ec`
         )
           .then(function (response) {
             if (response.status === 200) {
@@ -60,7 +60,7 @@ function Homepage() {
       fetch(
         `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${getSearchHero}&orderBy=${
           checked === true ? "-name" : "name"
-        }&apikey=${process.env.REACT_APP_API_KEY}`
+        }&apikey=37e7928420ebfdcac88f6dbe3cbf39ec`
       )
         .then(function (response) {
           if (response.status === 200) {

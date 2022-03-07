@@ -29,7 +29,7 @@ function HeroPage() {
     function () {
       if (idHero) {
         fetch(
-          `https://gateway.marvel.com:443/v1/public/characters/${idHero}?apikey=${process.env.REACT_APP_API_KEY}`
+          `https://gateway.marvel.com:443/v1/public/characters/${idHero}?apikey=37e7928420ebfdcac88f6dbe3cbf39ec`
         )
           .then(function (response) {
             if (response.status === 200) {
@@ -48,7 +48,7 @@ function HeroPage() {
           });
 
         fetch(
-          `https://gateway.marvel.com:443/v1/public/characters/${idHero}/comics?orderBy=onsaleDate&limit=12&apikey=${process.env.REACT_APP_API_KEY}`
+          `https://gateway.marvel.com:443/v1/public/characters/${idHero}/comics?orderBy=onsaleDate&limit=12&apikey=37e7928420ebfdcac88f6dbe3cbf39ec`
         )
           .then(function (response) {
             if (response.status === 200) {
