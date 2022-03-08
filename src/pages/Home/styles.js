@@ -23,11 +23,19 @@ export const Header = styled.header`
       font-weight: 600;
       font-size: 38px;
       text-transform: uppercase;
+
+      @media (max-width: 639px) {
+        font-size: 28px;
+      }
     }
 
     p {
       font-size: 22px;
       line-height: 24px;
+
+      @media (max-width: 639px) {
+        font-size: 18px;
+      }
     }
   }
 `;
@@ -38,11 +46,19 @@ export const FilterContainer = styled.div`
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Filter = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    order: 1;
+  }
 
   label {
     margin: 0 23px;
@@ -50,6 +66,10 @@ export const Filter = styled.div`
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
+
+    @media (max-width: 639px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -90,10 +110,17 @@ export const FilterOrder = styled.input`
 `;
 
 export const Search = styled.div`
-  width: 550px;
+  width: 50%;
+  max-width: 550px;
   position: relative;
   display: flex;
   align-items: center;
+
+  @media (max-width: 639px) {
+    order: 0;
+    margin-bottom: 30px;
+    width: 90%;
+  }
 
   input[type="text"] {
     width: 100%;
@@ -109,9 +136,14 @@ export const Search = styled.div`
     &::placeholder {
       color: var(--red-main);
     }
+
+    @media (max-width: 639px) {
+      padding: 20px;
+    }
   }
 
   ion-icon {
+    display: none;
     position: absolute;
     right: 0;
     padding: 18.3px;
@@ -128,6 +160,9 @@ export const HeroInfoQuantity = styled.h2`
   font-weight: 600;
   font-size: 18px;
   color: var(--gray);
+  @media (max-width: 639px) {
+    text-align: center;
+  }
 
   span {
     font-weight: 700;
@@ -141,18 +176,47 @@ export const Heroes = styled.section`
   max-width: 1120px;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(4, 265px);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   row-gap: 30px;
+
+  @media (max-width: 959px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 639px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  @media (max-width: 500px) {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
 `;
 
 export const Hero = styled.div`
+  width: 100%;
+  max-width: 400px;
+  border-bottom: none;
+  padding-bottom: 0;
+
+  @media (max-width: 639px) {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--red-main);
+  }
+
   a {
     text-decoration: none;
     img {
-      width: 265px;
+      width: 100%;
       height: 265px;
       border-bottom: 3px solid var(--red-main);
+
+      @media (max-width: 320px) {
+        height: 300px;
+      }
     }
     p {
       color: var(--black-text);
