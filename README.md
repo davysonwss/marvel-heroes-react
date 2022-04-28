@@ -1,29 +1,28 @@
 # Marvel Heroes 🦸
 
-Projeto feito com o intuito de aprimorar e aprender tecnologias do javascript.
+Projeto feito com o intuito de aprimorar e aprender tecnologias do ReactJS
 
 ## Live Preview 🔗
 
-[Marvel Heroes](https://davysonwss.github.io/marvel-heroes/)
+[Marvel Heroes](https://davysonwss-marvel-heroes.vercel.app/)
 
 ## Desafios e Aprendizados 📌
 
-- O principal desafio foi consumir a API da Marvel e com ela exibir os respectivos heróis.
-- Como a API da Marvel é instável tive dificuldade para tratar seus erros, pois, podiam ocorrer diversos cenários e consegui tratá-los e exibir seus respectivos erros para o usuário.
-- A partir desse projeto consegui aprimorar minha habilidade de consumo de APIs.
-- Consegui também aprimorar o uso de serviços separados para que possam ser sempre utilizados em diversas áreas, com isso consegui separá-los em funções e deixar o código mais legível.
+- Anteriormente eu conclui esse projeto na sua forma original que seria feito apenas com as tecnologias Html, Css e JavaScript. Então para que eu pudesse continuar evoluindo e aprimorar meus conhecimentos sobre tais tecnologias decidi refaze-lo utilizando ReactJS.
+- Com o ReactJS consegui deixar o código bem mais legível, refatorado e com uma melhor manuntenção.
+
 
 #### Extras
 
-- Adicionei um botão de resetar os filtros para que o usuário seja capaz de retornar a listagem inicial de heróis.
+- No projeto anterior, o usuário utilizaria um botão que resetava os filtros e com o React eu consegui concluir o projeto sem a necessidade do botão, deixando assim uma melhor experiência pro usuário.
 
 ## Tecnologias
 
 - HTML
-- CSS - SCSS
+- CSS - Styled-Components
 - JavaScript
+- ReactJS
 - API
-- Gulp
 - Código Responsivo
 
 ## Referência do Desafio 🔗
